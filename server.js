@@ -6,7 +6,7 @@ const app=express();
 
 app.use(cors());
 app.use(express.json());
-mongoose.connect('mongodb://127.0.0.1:27017/netflix').then(()=>console.log("db connected"))
+mongoose.connect('mongodb+srv://Shivaprasad:Shivu%402000@cluster0.5wetoyi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/netflix').then(()=>console.log("db connected"))
 
 app.use('/api/user',userRoute)
 app.listen(5000,console.log('server'))
